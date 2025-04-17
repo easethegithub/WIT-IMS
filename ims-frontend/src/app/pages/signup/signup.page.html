@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- 🔔 Success Message -->
+  <ion-text color="success" *ngIf="successMessage">
+    <p>{{ successMessage }}</p>
+  </ion-text>
+
+  <!-- ❌ Error Message -->
+  <ion-text color="danger" *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </ion-text>
+
+  <!-- 📧 Email -->
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <!-- 🔒 Password -->
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <!-- 🔒 Confirm Password -->
+  <ion-item>
+    <ion-label position="floating">Confirm Password</ion-label>
+    <ion-input type="password" [(ngModel)]="confirmPassword"></ion-input>
+  </ion-item>
+
+  <!-- 🔘 Signup Button -->
+  <ion-button expand="block" class="ion-margin-top" (click)="signup()">
+    Sign Up
+  </ion-button>
+
+</ion-content>

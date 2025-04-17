@@ -1,0 +1,43 @@
+/* Style for the login header to match the container width */
+.login-header {
+    max-width: 400px; /* Match the max-width of the login-container */
+    margin: 0 auto;   /* Center the header horizontally */
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items from the top */
+    align-items: stretch;       /* Make items take the full width of the container */
+    min-height: calc(100vh - var(--ion-toolbar-height)); /* Full viewport height minus the header height */
+    max-width: 400px;         /* Max width for the form */
+    margin: 0 auto;           /* Center the container */
+    padding: 20px;
+  }
+  
+  /* Style the ion-toolbar within the header */
+  .login-header ion-toolbar {
+    --padding-start: 16px; /* Add some left padding */
+    --padding-end: 16px;   /* Add some right padding */
+    ion-title {
+      text-align: center; /* Center the title within the toolbar */
+    }
+  }
+  
+  /* Optional: Adjust form items and button spacing */
+  ion-item {
+    margin-bottom: 16px; /* Space between form items */
+  }
+  
+  ion-button {
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  /* Style the link at the bottom */
+  .ion-text-center {
+    text-align: center;
+  }
+  
+  .ion-margin-top {
+    margin-top: 16px;
+  }
